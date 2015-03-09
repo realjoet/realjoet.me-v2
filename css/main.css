@@ -1,0 +1,349 @@
+/**************************
+VARIABLES
+dark-grey: #424242;
+light-grey: #ECEFF1;
+dark-cobalt: #263238;
+light-cobalt: #37474F;
+electric-blue: #00ACC1;
+
+**************************/
+
+
+
+
+
+/**************************
+GLOBALS
+**************************/
+
+
+body {
+	font-family: "Helvetica";
+	color: #ECEFF1;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.flip-container {
+	width: 33%;
+	margin: 0;
+}
+
+	.flip-container:hover .flipper,  
+  	.flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    	-o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 33vw;
+	height: 33vw;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.work-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.work-2 {
+	position: absolute;
+	top: 0;
+	left: 33vw;
+}
+
+.work-3 {
+	position: absolute;
+	top: 0;
+	left: 66vw;
+}
+
+.work-4 {
+	position: absolute;
+	top: 33vw;
+	left: 0;
+}
+
+.work-5 {
+	position: absolute;
+	top: 33vw;
+	left: 33vw;
+}
+
+.work-6 {
+	position: absolute;
+	top: 33vw;
+	left: 66vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************
+FRONT
+**************************/
+
+.display-view--profile {
+	background: url(../img/profPic.jpg) center no-repeat;
+	z-index: 2;
+	background-size: 100%;
+}
+
+.display-view--sherpa {
+	background: url(../img/sherpa/sherpaApp-view1.jpg) center no-repeat;
+	z-index: 2;
+}
+
+.display-view--therapy-ball {
+	background: url(../img/3d-printing/3d-print-show.jpg) center no-repeat;
+	background-size: 100%;
+	z-index: 2;
+}
+
+.display-view--boxing-match {
+	background: url(../img/parallax-boxer/boxing-match.png) center no-repeat;
+	background-size: 100%;
+	z-index: 2;
+}
+
+.display-view--therapy-ball {
+	background: url(../img/3d-printing/3d-print-show.jpg) center no-repeat;
+	background-size: 100%;
+	z-index: 2;
+}
+
+.display-view--rtd-beacon {
+	background: url(../img/3d-printing/3d-print-show.jpg) center no-repeat;
+	background-size: 100%;
+	z-index: 2;
+}
+
+.display-view--spiffly {
+	background: url(../img/3d-printing/3d-print-show.jpg) center no-repeat;
+	background-size: 100%;
+	z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************
+BACK
+**************************/
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	background: #263238;
+}
+
+div.work__display-info {
+	/*display: flex;
+	justify-content: flex-start;*/
+}
+
+			div.work__display-info h2{
+				width: 84%;
+				color: #00ACC1;
+				margin: 0;
+				position: absolute;
+				top: 3vw;
+				left: 3vw;
+				font-size: 2.5em;
+				font-weight: 500;
+			}
+
+			div.work__display-info h4{
+				width: 84%;
+				margin: 1% 0;
+				position: absolute;
+				top: 6vw;
+				left: 3vw;
+				font-size: 1.2em;
+				font-weight: 100;
+			}
+
+			div.work__display-info p{
+				color: #00ACC1;
+				width: 84%;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				top: 9vw;
+				left: 3vw;
+				font-weight: 400;
+			}
+
+			a.button {
+				width: 30%;
+				position: absolute;
+				top: 20vw;
+				left: 10vw;
+				padding: 2%;
+				color: #00ACC1;
+				border: 1px solid #00ACC1;
+				text-align: center;
+				text-decoration: none;
+			}
+
+				a.button:hover {
+					color: #263238;
+					font-weight: 500;
+					background-color: #00ACC1;
+					cursor: pointer;
+					box-shadow: 1px 1px 20px #263238;
+				}
+
+span.white {
+	color: #ECEFF1;
+	font-weight: 200;
+}
+
+
+.contact-me__social {
+	width: 84%;
+	position: absolute;
+	top: 27.5vw;
+	left: 2vw;
+}
+
+	.contact-me__social a{
+		width: 48px;
+		height: 48px;
+		margin: 0 2%;
+		overflow: hidden;
+
+	}
+
+	.contact-me__social--twitter{
+		background: url(img/logos/twitter-icon.svg) 0 0 no-repeat;
+		background-size: 48px;
+		width: 48px;
+		height: 48px;
+		margin: 0 5% 0 0;
+		float: left;
+	}
+
+	.contact-me__social--twitter:hover{
+		background: url(img/logos/twitter-icon.svg) 0 -48px no-repeat;
+	}
+
+	.contact-me__social--linkedin{
+		background: url(img/logos/linkedin-icon.svg) 0 0 no-repeat;
+		background-size: 45px;
+		overflow: hidden;
+		width: 45px;
+		height: 45px;
+		margin: 0 5% 0 0;
+		float: left;
+	}
+
+	.contact-me__social--linkedin:hover{
+		background: url(img/logos/linkedin-icon.svg) 0 -47px no-repeat;
+	}
+
+	.contact-me__social--github{
+		background: url(img/logos/github-icon.svg) 0 0 no-repeat;
+		background-size: 45px;
+		overflow: hidden;
+		width: 45px;
+		height: 45px;
+		margin: 0 5% 0 0;
+		float: left;
+	}
+
+	.contact-me__social--github:hover{
+		background: url(img/logos/github-icon.svg) 0 -46px no-repeat;
+	}
+
+	.contact-me__social--medium{
+		background: url(img/logos/medium-icon.svg) 0 0 no-repeat;
+		background-size: 48px;
+		overflow: hidden;
+		width: 48px;
+		height: 48px;
+		margin: 0 5% 0 0;
+		float: left;
+	}
+
+	.contact-me__social--medium:hover{
+		background: url(img/logos/medium-icon.svg) 0 -48px no-repeat;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
