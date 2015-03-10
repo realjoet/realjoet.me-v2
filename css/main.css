@@ -152,37 +152,42 @@ FRONT
 
 .display-view--profile {
 	background: url(../img/profPic.jpg) center no-repeat;
-	z-index: 2;
 	background-size: 100%;
+	z-index: 2;
 }
 
 .display-view--sherpa {
-	background: url(../img/sherpa/sherpaApp-view1.jpg) center no-repeat;
-	z-index: 2;
+	background: url(../img/sherpa/sherpaApp-view1.gif) center no-repeat;
 	background-size: 50%;
+	background-color: #98CA4F;
+	z-index: 2;
 }
 
 .display-view--therapy-ball {
-	background: url(../img/3d-printing/3d-print-show.jpg) center no-repeat;
-	background-size: 100%;
+	background: url(../img/3d-printing/3d-print-v1.gif) center no-repeat;
+	background-size: 60%;
+	background-color: #FF9800;
 	z-index: 2;
 }
 
 .display-view--boxing-match {
-	background: url(../img/parallax-boxer/boxing-match.png) center no-repeat;
-	background-size: 100%;
+	background: url(../img/parallax-boxer/img_boxerA.png) center no-repeat;
+	background-size: 75%;
+	background-color: #E74C3C;
 	z-index: 2;
 }
 
 .display-view--rosie {
-	background: url(../img/rosie/rosie-mock.jpg) center no-repeat;
-	background-size: 50%;
+	background: url(../img/rosie/rosie-mock.gif) center no-repeat;
+	background-size: 48%;
+	background-color: #2197F2;
 	z-index: 2;
 }
 
 .display-view--spiffly {
-	background: url(../img/3d-printing/3d-print-show.jpg) center no-repeat;
-	background-size: 100%;
+	background: url(../img/spiffly/spiffly-interactive-view.gif) center no-repeat;
+	background-size: 55%;
+	background-color: #EF5051;
 	z-index: 2;
 }
 
