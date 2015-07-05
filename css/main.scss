@@ -1,0 +1,241 @@
+$dark-grey: #424242;
+$light-grey: #ECEFF1;
+$dark-cobalt: #263238;
+$light-cobalt: #37474F;
+$electric-blue: #00ACC1;
+$break-medium: 780px;
+$break-large: 1028px;
+
+//! GLOBALS -------------------------------------
+//-----------------------------------------------
+html {
+	box-sizing: border-box;
+	font-family: "Roboto", "sans-serif";
+}
+
+body {
+	background: $dark-cobalt;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+//! ABOUT ME ------------------------------------
+//-----------------------------------------------
+.about-me {
+	padding: 5% 0 10%;
+	width: 100%;
+}
+
+.about-me__image {
+	border-radius: 500px;
+	margin: 0 30%;
+	width: 40%;
+}
+
+.about-me__title {
+	color: $electric-blue;
+	font-size: 2em;
+	font-weight: 300;
+	margin: 0 auto;
+	padding: 2% 0;
+	width: 80%
+}
+
+.about-me__description {
+	font-size: 1.5em;
+	font-weight: 200;
+	margin: 0 auto;
+	padding: 0 0 10%;
+	width: 80%;
+}
+
+.about-me__info-wrapper {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.about-me__info-wrapper--inner {
+	float: left;
+	width: 33%;
+
+}
+
+.about-me__resume-button {
+	border: 1px solid $electric-blue;
+	color: $electric-blue;
+	font-size: 1.5em;
+	padding: 10px 20px;
+	transition: all .4s;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: $electric-blue;
+		color: $dark-cobalt;
+		cursor: pointer;
+	}
+}
+
+.about-me__email {
+	color: #fff;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+//! WORK ----------------------------------------
+//-----------------------------------------------
+
+%work-hero {
+	float: left;
+	height: 100vw;
+	width: 100%;
+	z-index: 1;
+	transition: all .4s;
+
+	&:hover {
+		box-shadow: 0px 0px 20px #000;
+		transform: scale(1.02);
+		z-index: 2;
+	}
+}
+
+.work-hero--one {
+	@extend %work-hero;
+
+	background: url(../img/spiffly-web/spiffly-logo.png) center no-repeat;
+	background-size: 80%;
+	background-color: #025cb4;
+}
+
+.work-hero--two {
+	@extend %work-hero;
+
+	background: url(../img/sherpa/sherpaApp-view1.gif) center no-repeat;
+	background-size: 50%;
+	background-color: #98CA4F;
+}
+
+.work-hero--three {
+	@extend %work-hero;
+
+	background: url(../img/3d-printing/3d-print-v1.gif) center no-repeat;
+	background-size: 60%;
+	background-color: #FF9800;
+}
+
+.work-hero--four {
+	@extend %work-hero;
+
+	background: url(../img/parallax-boxer/img_boxerA.png) center no-repeat;
+	background-size: 75%;
+	background-color: #E74C3C;
+}
+
+.work-hero--five {
+	@extend %work-hero;
+
+	background: url(../img/rosie/rosie-mock.gif) center no-repeat;
+	background-size: 48%;
+	background-color: #2197F2;
+}
+
+.work-hero--six {
+	@extend %work-hero;
+
+	background: url(../img/spiffly-app/spiffly-interactive-view.gif) center no-repeat;
+	background-size: 55%;
+	background-color: #EF5051;
+}
+
+
+
+
+//! CONTACT -------------------------------------
+//-----------------------------------------------
+.about-me__info-wrapper--inner {
+	font-weight: 300;
+	font-size: 1.5em;
+	padding: 10% 0 0;
+	text-align: left;
+	width: 100%;
+
+	+.about-me__info-wrapper--inner {
+		padding: 0;
+	}
+
+	&:nth-child(3) {
+		padding: 0 0 10%;
+	}
+}
+
+
+
+
+
+//! MEDIA QUERIES -------------------------------
+//-----------------------------------------------
+
+
+@media (min-width: 780px) {
+	.about-me {
+		padding: 3% 0 6%;
+	}
+
+	.about-me__image {
+		margin: 0 34%;
+		width: 32%;
+	}
+
+	.about-me__title {
+		padding: 2% 0;
+	}
+
+	.about-me__description {
+		padding: 0 0 5%;
+	}
+
+	%work-hero {
+		height: 50vw;
+		width: 50%;
+	}
+
+	.about-me__info-wrapper--inner {
+		font-size: 1em;
+		padding: 3% 0;
+		width: 33.3%;
+
+		&:nth-child(2) {
+			padding: 3% 0;
+			text-align: center;
+		}
+
+		&:nth-child(3) {
+			padding: 3% 0;
+			text-align: right;
+		}
+	}
+}
+
+@media (min-width: 1028px) {
+	.about-me {
+		padding: 2% 0 5%;
+	}
+
+	.about-me__image {
+		margin: 0 37.5%;
+		width: 25%;
+	}
+
+	%work-hero {
+		height: 33.3vw;
+		width: 33.3%;
+	}
+}
