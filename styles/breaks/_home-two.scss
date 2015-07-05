@@ -1,0 +1,49 @@
+//! ABOUT ME ------------------------------------
+//-----------------------------------------------
+.about-me {
+	padding: 3% 0 6%;
+}
+
+.about-me__image {
+	margin: 0 34%;
+	width: 32%;
+}
+
+.about-me__title {
+	padding: 2% 0;
+}
+
+.about-me__description {
+	padding: 0 0 5%;
+}
+
+
+
+
+//! WORK ----------------------------------------
+//-----------------------------------------------
+%work-hero {
+	height: 50vw;
+	width: 50%;
+}
+
+
+
+
+//! CONTACT -------------------------------------
+//-----------------------------------------------
+.about-me__info-wrapper--inner {
+	font-size: 1em;
+	padding: 3% 0;
+	width: 33.3%;
+
+	&:nth-child(2) {
+		padding: 3% 0;
+		text-align: center;
+	}
+
+	&:nth-child(3) {
+		padding: 3% 0;
+		text-align: right;
+	}
+}

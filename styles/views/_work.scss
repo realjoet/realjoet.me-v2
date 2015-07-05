@@ -1,0 +1,23 @@
+.work-wrapper {
+	padding: 5% 15%;
+}
+
+.work-link {
+	@extend .about-me__resume-button;
+	
+	float: right;
+	font-size: .3em;
+	padding: 5px 10px;
+	position: relative;
+	top: 6px;
+}
+
+.work-role, .work-title {
+	margin: 0;
+}
+
+.work-role {
+	color: $electric-blue;
+	font-weight: 200;
+	margin: 0;
+}
